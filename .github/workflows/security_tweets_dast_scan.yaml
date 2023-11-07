@@ -1,10 +1,10 @@
-name: allengayCx Security Tweets
-
+name: RobertMickleCx Security Tweets
+# test
 # Controls when the workflow will run
 on:
-  #pull_request:
+  pull_request:
   #  types: [opened, reopened, synchronize]
-  #  branches: [ "main" ]
+    branches: [ "main" ]
   #push: 
   #    branches:
   #    - main
@@ -36,7 +36,7 @@ jobs:
         command: "web"
         config: './security_tweets.yaml'
         base_url: "https://deu.ast.checkmarx.net"
-        environment_id: "fd6ea573-a228-47e1-b5f8-573525251bc0"
+        environment_id: "ed1241dc-e8de-44b7-b71a-7e93f4ae3acf"
         fail_on: "HIGH"
         verbose: true
         output: ./output
